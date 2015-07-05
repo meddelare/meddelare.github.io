@@ -5,9 +5,9 @@ Install **custom social share counters** on your website with your **own hosted 
 
 Check out [meddelare.com](http://meddelare.com/)!
 
-[![A screenshot of the button example](https://meddelare.github.io/meddelare-examples/examples/button/screenshot.png)](https://meddelare.github.io/)
+[![A screenshot of the button example](http://meddelare.com/meddelare-examples/examples/button/screenshot.png)](http://meddelare.com/meddelare-examples)
 
-View examples on [meddelare.github.io/meddelare-examples](https://meddelare.github.io/meddelare-examples).
+View examples on [meddelare.com/meddelare-examples](http://meddelare.com/meddelare-examples).
 
 
 
