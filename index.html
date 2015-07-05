@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style/main.css" rel="stylesheet">
+    <!-- See https://meddelare.github.io/meddelare-examples/examples/button/ for the rest of this example -->
+    <link href="https://meddelare.github.io/meddelare-examples/examples/button/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="http://meddelare.com/">Meddelare</a></h1>
+        <p>
+            Install <strong>custom social share counters</strong> on your website with your <strong>own hosted solution</strong>, which only makes <strong>a single API request</strong> and loads <strong>minimal or zero assets</strong> to display the counters.
+        </p>
+        <p>
+            Check out <a href="http://meddelare.com/">meddelare.com</a>!
+        </p>
+        <p>
+            <!-- See https://meddelare.github.io/meddelare-examples/examples/button/ for the rest of this example -->
+            <div class="down sharecenter social-container" style="width: 248px">
+                <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=http://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
+                    <div id="stwit"></div>
+                </a>
+                <a data-count="0" href="https://www.facebook.com/share.php?u=http://meddelare.com/" id="facebook" target="_blank" class="social-count facebook-button">
+                    <div id="sfb"></div>
+                </a>
+                <a data-count="0" href="https://plus.google.com/share?url=http://meddelare.com/" id="googleplus" target="_blank" class="social-count google-button">
+                    <div id="sgplus"></div>
+                </a>
+            </div>
+        </p>
+    </header>
+    <main>
+        <h2>Description</h2>
+        <p>
+            This is an open source and self-hosted alternative to sharing services such as AddThis and ShareThis. Because you run the proxy server yourself, you are also defending your users’ privacy against the social networks’ tracking. Users only opt in to their tracking once they decide to click a share button – never implicitly just because they visited your page.
+        </p>
+        <ul>
+            <li>View examples on <a href="https://meddelare.github.io/meddelare-examples">meddelare.github.io/meddelare-examples</a>.</li>
+            <li>View node.js server code on <a href="https://meddelare.github.io/meddelare-node-server">meddelare.github.io/meddelare-node-server</a>.</li>
+        </ul>
+        <h2>Features</h2>
+        <ul>
+            <li>Get counts from multiple social networks in one API call, delivered as JSON or JSONP.</li>
+            <li>The server calls social networks in parallel, making it (approximately) as fast to get the count from one as several at once.</li>
+            <li>No third party requirements – you can host both the social buttons server and any resources yourself.</li>
+            <li>Proxies calls from your users to the social networks, blocking their user tracking until the user decides to click a share button.</li>
+            <li>Heroku enabled – create an app and deploy instantly.</li>
+            <li>Sends cache control HTTP headers so you can throw a content delivery network (CDN) service, such as CloudFront, in front with ease. This should result in faster API calls and less chance of getting rate limited.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>
+            Copyright &copy; 2015 Team <a href="http://meddelare.com/">Meddelare</a> All rights reserved.
+        </p>
+        <p>
+            When using <a href="https://github.com/meddelare/meddelare-examples">meddelare-examples</a>, comply to the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+        </p>
+    </footer>
+    <!-- See https://meddelare.github.io/meddelare-examples/examples/button/ for the rest of this example -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>
+    $.ajax("https://d12cncu17l9pr5.cloudfront.net/?networks=facebook,twitter,googleplus&url=http://meddelare.com", {
+        success: function(res, err) {
+            $.each(res, function(network, value) {
+                $("#" + network).attr("data-count", value);
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>
