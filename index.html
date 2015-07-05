@@ -14,9 +14,6 @@
             Install <strong>custom social share counters</strong> on your website with your <strong>own hosted solution</strong>, which only makes <strong>a single API request</strong> and loads <strong>minimal or zero assets</strong> to display the counters.
         </p>
         <p>
-            Check out <a href="http://meddelare.com/">meddelare.com</a>!
-        </p>
-        <p>
             <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
             <div class="down sharecenter social-container" style="width: 248px">
                 <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=http://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
@@ -38,16 +35,19 @@
         </p>
         <ul>
             <li>View examples on <a href="http://meddelare.com/meddelare-examples">meddelare.com/meddelare-examples</a>.</li>
-            <li>View node.js server code on <a href="https://github.com/meddelare/meddelare-node-server">github.com/meddelare/meddelare-node-server</a>.</li>
+            <li>Social Buttons Node.js Server: <a href="https://github.com/meddelare/meddelare-node-server">github.com/meddelare/meddelare-node-server</a>.</li>
+            <li>Social Buttons Node.js Express Middleware: <a href="https://github.com/meddelare/meddelare-node-express">github.com/meddelare/meddelare-node-express</a>.</li>
+            <li>Social Buttons Node.js Counters: <a href="https://github.com/meddelare/meddelare-node-counters">github.com/meddelare/meddelare-node-counters</a>.</li>
         </ul>
         <h2>Features</h2>
         <ul>
-            <li>Get counts from multiple social networks in one API call, delivered as JSON or JSONP.</li>
+            <li>Get counts from multiple social networks in a single API call, delivered as JSON or JSONP.</li>
             <li>The server calls social networks in parallel, making it (approximately) as fast to get the count from one as several at once.</li>
             <li>No third party requirements – you can host both the social buttons server and any resources yourself.</li>
             <li>Proxies calls from your users to the social networks, blocking their user tracking until the user decides to click a share button.</li>
+            <li>Super-fast in-memory cache keeps the most recent results per network and url.</li>
             <li>Heroku enabled – create an app and deploy instantly.</li>
-            <li>Sends cache control HTTP headers so you can throw a content delivery network (CDN) service, such as CloudFront, in front with ease. This should result in faster API calls and less chance of getting rate limited.</li>
+            <li>Sends cache control HTTP headers so you can throw a content delivery network (CDN) service, such as CloudFront, in front with ease.</li>
         </ul>
     </main>
     <footer>
