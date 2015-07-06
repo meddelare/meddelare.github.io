@@ -4,9 +4,10 @@
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Open source, privacy aware social share buttons with counters! meddelare.com</title>
-    <link href="resources/style/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/font/font.css" />
+    <link rel="stylesheet" href="/resources/style/main.css">
     <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
-    <link href="http://meddelare.com/meddelare-examples/examples/button/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://meddelare.com/meddelare-examples/examples/button/style.css">
     <link rel="icon" type="image/png" href="/resources/image/icon/icon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/resources/image/icon/icon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/resources/image/icon/icon-64x64.png" sizes="64x64" />
@@ -38,49 +39,52 @@
         <p>
             Install <strong>custom social share counters</strong> on your website with your <strong>own hosted solution</strong>, which only makes <strong>a single API request</strong> and loads <strong>minimal or zero assets</strong> to display the counters.
         </p>
-        <p>
-            <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
-            <div class="down sharecenter social-container" style="width: 248px">
-                <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=http://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
-                    <div id="stwit"></div>
-                </a>
-                <a data-count="0" href="https://www.facebook.com/share.php?u=http://meddelare.com/" id="facebook" target="_blank" class="social-count facebook-button">
-                    <div id="sfb"></div>
-                </a>
-                <a data-count="0" href="https://plus.google.com/share?url=http://meddelare.com/" id="googleplus" target="_blank" class="social-count google-button">
-                    <div id="sgplus"></div>
-                </a>
-            </div>
-        </p>
     </header>
+    <aside>
+        <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
+        <div class="down sharecenter social-container" style="width: 248px">
+            <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=http://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
+                <div id="stwit"></div>
+            </a>
+            <a data-count="0" href="https://www.facebook.com/share.php?u=http://meddelare.com/" id="facebook" target="_blank" class="social-count facebook-button">
+                <div id="sfb"></div>
+            </a>
+            <a data-count="0" href="https://plus.google.com/share?url=http://meddelare.com/" id="googleplus" target="_blank" class="social-count google-button">
+                <div id="sgplus"></div>
+            </a>
+        </div>
+    </aside>
     <main>
-        <h2>Description</h2>
-        <p>
-            This is an open source and self-hosted alternative to sharing services such as AddThis and ShareThis. Because you run the proxy server yourself, you are also defending your users’ privacy against the social networks’ tracking. Users only opt in to their tracking once they decide to click a share button – never implicitly just because they visited your page.
-        </p>
-        <ul>
-            <li>View examples on <a href="http://meddelare.com/meddelare-examples">meddelare.com/meddelare-examples</a>.</li>
-            <li>Social Buttons Node.js Server: <a href="https://github.com/meddelare/meddelare-node-server">github.com/meddelare/meddelare-node-server</a>.</li>
-            <li>Social Buttons Node.js Express Middleware: <a href="https://github.com/meddelare/meddelare-node-express">github.com/meddelare/meddelare-node-express</a>.</li>
-            <li>Social Buttons Node.js Counters: <a href="https://github.com/meddelare/meddelare-node-counters">github.com/meddelare/meddelare-node-counters</a>.</li>
-        </ul>
-        <h2>Features</h2>
-        <ul>
-            <li>Get counts from multiple social networks in a single API call, delivered as JSON or JSONP.</li>
-            <li>The server calls social networks in parallel, making it (approximately) as fast to get the count from one as several at once.</li>
-            <li>No third party requirements – you can host both the social buttons server and any resources yourself.</li>
-            <li>Proxies calls from your users to the social networks, blocking their user tracking until the user decides to click a share button.</li>
-            <li>Super-fast in-memory cache keeps the most recent results per network and url.</li>
-            <li>Heroku enabled – create an app and deploy instantly.</li>
-            <li>Sends cache control HTTP headers so you can throw a content delivery network (CDN) service, such as CloudFront, in front with ease.</li>
-        </ul>
+        <article class="two columns">
+            <div class="left column">
+                <h2>Description</h2>
+                <p>
+                    This is an open source and self-hosted alternative to sharing services such as AddThis and ShareThis. Because you run the proxy server yourself, you are also defending your users’ privacy against the social networks’ tracking. Users only opt in to their tracking once they decide to click a share button – never implicitly just because they visited your page.
+                </p>
+                <ul>
+                    <li><a href="http://meddelare.com/meddelare-examples">Meddelare Front-end Examples</a></li>
+                    <li><a href="https://github.com/meddelare/meddelare-node-server">Meddelare Node.js Server</a></li>
+                    <li><a href="https://github.com/meddelare/meddelare-node-express">Meddelare Node.js Express Middleware</a></li>
+                    <li><a href="https://github.com/meddelare/meddelare-node-counters">Meddelare Node.js Counters</a>.</li>
+                </ul>
+            </div>
+            <div class="right column">
+                <h2>Features</h2>
+                <ul>
+                    <li>Get counts from multiple social networks in a single API call, delivered as JSON or JSONP.</li>
+                    <li>The server calls social networks in parallel, making it (approximately) as fast to get the count from one as several at once.</li>
+                    <li>No third party requirements – you can host both the social buttons server and any resources yourself.</li>
+                    <li>Proxies calls from your users to the social networks, blocking their user tracking until the user decides to click a share button.</li>
+                    <li>Super-fast in-memory cache keeps the most recent results per network and url.</li>
+                    <li>Heroku enabled – create an app and deploy instantly.</li>
+                    <li>Sends cache control HTTP headers so you can throw a content delivery network (CDN) service, such as CloudFront, in front with ease.</li>
+                </ul>
+            </div>
+        </article>
     </main>
     <footer>
         <p>
-            Copyright &copy; 2015 Team <a href="http://meddelare.com/">Meddelare</a> All rights reserved.
-        </p>
-        <p>
-            When using <a href="https://github.com/meddelare/meddelare-examples">meddelare-examples</a>, comply to the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+            <img src="/resources/image/icon/icon-64x64.png" /> <a href="http://meddelare.com/">Meddelare</a> Copyright &copy; 2015 Team <a href="http://meddelare.com/">Meddelare</a> All rights reserved. <a href="https://github.com/meddelare">Released</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
         </p>
     </footer>
     <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->

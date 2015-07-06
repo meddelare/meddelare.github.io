@@ -21,6 +21,8 @@ This is source code for the official Meddelare webpage. Pull requests are welcom
 
 Many thanks goes out to [Taskforce](https://taskforce.is/) for their [social-buttons-server](https://github.com/tfrce/social-buttons-server) (released into the [Public Domain](https://github.com/tfrce/social-buttons-server/tree/faf1a41e5d2d44b7e6de460b9369f11437095af1)) -- especially the creator [@thomasdavis](https://github.com/thomasdavis) and contributor [@beaugunderson](https://github.com/beaugunderson). This software, [meddelare.github.io](https://github.com/meddelare/meddelare.github.io), is based on their work.
 
+Thanks to <a href="https://secure.flickr.com/photos/99120948@N08/">kelvie</a> for <a href="https://secure.flickr.com/photos/99120948@N08/19273986309/">IMG_7798</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC-BY 2.0</a>).
+    
 
 
 ---

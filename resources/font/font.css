@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Open Sans'),
+		local('OpenSans'),
+		/* from http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot */
+		url('Open_Sans.eot?#iefix') format('embedded-opentype'),
+		/* from http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff */
+		url('Open_Sans.woff') format('woff'),
+		/* from http://fonts.gstatic.com/l/font?kit=cJZKeOuBrn4kERxqtaUH3Zbd9NUM7myrQQz30yPaGQ4&skey=62c1cbfccc78b4b2#OpenSans */
+		url('Open_Sans.svg#OpenSans') format('svg'),
+		/* from http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf */
+		url('Open_Sans.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Bangers';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Bangers'),
+		local('Bangers-Regular'),
+		/* from http://fonts.gstatic.com/s/bangers/v7/ybYXAFtWOVmmrWj_aZCIlg.eot */
+		url('Bangers.eot?#iefix') format('embedded-opentype'),
+		/* from http://fonts.gstatic.com/s/bangers/v7/DqeGA7eaz0hhOYTfkeJBIA.woff */
+		url('Bangers.woff') format('woff'),
+		/* from http://fonts.gstatic.com/l/font?kit=5AsVHAIAfLGFHGihuf6qOQ&skey=80f504448509eaf7#Bangers */
+		url('Bangers.svg#Bangers') format('svg'),
+		/* from http://fonts.gstatic.com/s/bangers/v7/_Kq7Xa_aavBxPnttrBeaoQ.ttf */
+		url('Bangers.ttf') format('truetype');
+}
