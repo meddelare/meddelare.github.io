@@ -49,6 +49,10 @@ header {
     margin-bottom: 1em;
 }
 
+.small {
+    font-size: 0.5em;
+}
+
 header,
 header a {
     color: #ffffff;
@@ -126,6 +130,25 @@ abbr {
 
 .clear {
     clear: both;
+}
+
+ul.inline {
+    padding: 0;
+    margin: 0;
+}
+
+ul.inline li {
+    display: inline-block;
+}
+
+ul.inline li:before {
+    content: '\2022';
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+ul.inline li:first-of-type:before {
+    display: none;
 }
 
 aside .social-container {
