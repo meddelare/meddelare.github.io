@@ -132,6 +132,10 @@ abbr {
     clear: both;
 }
 
+li {
+    margin-bottom: 0.75em;
+}
+
 ul.inline {
     padding: 0;
     margin: 0;
