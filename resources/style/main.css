@@ -157,15 +157,10 @@ ul.inline li:first-of-type:before {
 
 aside {
     position: relative;
+    text-align: center
 }
 
-aside .social-container {
-    padding: 50px;
-}
-
-aside .social-count:before {
-    display: none;
-}
+aside .social-container {}
 
 @keyframes bouncebottom {
     0% {
