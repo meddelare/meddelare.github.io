@@ -137,22 +137,25 @@ li {
 }
 
 ul.inline {
-    padding: 0;
-    margin: 0;
+    padding-top: 0;
 }
 
-ul.inline li {
-    display: inline-block;
-}
-
-ul.inline li:before {
-    content: '\2022';
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-ul.inline li:first-of-type:before {
-    display: none;
+@media (min-width: 1000px) {
+    ul.inline {
+        padding: 0;
+        margin: 0;
+    }
+    ul.inline li {
+        display: inline-block;
+    }
+    ul.inline li:before {
+        content: '\2022';
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    ul.inline li:first-of-type:before {
+        display: none;
+    }
 }
 
 aside {
@@ -170,13 +173,13 @@ aside .social-container {}
         transform: translateY(0);
     }
     40% {
-        transform: translateY(3px);
+        transform: translateY(4px);
     }
     50% {
-        transform: translateY(1px);
+        transform: translateY(2px);
     }
     60% {
-        transform: translateY(3px);
+        transform: translateY(4px);
     }
     80% {
         transform: translateY(0);
@@ -187,42 +190,42 @@ aside .social-container {}
 }
 
 .bouncebottom {
-    animation: bouncebottom 3s infinite;
+    animation: bouncebottom 2s infinite;
 }
 
 @keyframes bounceleft {
     0% {
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 4px;
+        margin-right: 0;
     }
     20% {
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 4px;
+        margin-right: 0;
     }
     40% {
         margin-left: 0px;
-        margin-right: 6px;
+        margin-right: 4px;
     }
     50% {
         margin-left: 2px;
-        margin-right: 4px;
+        margin-right: 2px;
     }
     60% {
         margin-left: 0px;
-        margin-right: 6px;
+        margin-right: 4px;
     }
     80% {
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 4px;
+        margin-right: 0;
     }
     100% {
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 4px;
+        margin-right: 0;
     }
 }
 
 .bounceleft {
-    animation: bounceleft 3s infinite;
+    animation: bounceleft 2s infinite;
 }
 
 #live-example-notice {
@@ -236,7 +239,7 @@ aside .social-container {}
     font-size: 0.75em;
     margin-right: 0.33em;
     display: inline-block;
-    animation: bouncebottom 3s infinite;
+    animation: bouncebottom 2s infinite;
 }
 
 @media (min-width: 850px) {
@@ -249,6 +252,6 @@ aside .social-container {}
     }
     #live-example-notice:before {
         content: '←';
-        animation: bounceleft 3s infinite;
+        animation: bounceleft 2s infinite;
     }
 }
