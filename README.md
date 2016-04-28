@@ -31,4 +31,4 @@ Thanks to <a href="https://secure.flickr.com/photos/99120948@N08/">kelvie</a> fo
 
 Copyright (c) 2015 Team Meddelare <https://meddelare.com/> All rights reserved.
 
-When using [meddelare.github.io](https://github.com/meddelare/meddelare.github.io), comply to the [MIT license](http://opensource.org/licenses/MIT).
+When using [meddelare.github.io](https://github.com/meddelare/meddelare.github.io), comply to the [MIT license](https://opensource.org/licenses/MIT).
