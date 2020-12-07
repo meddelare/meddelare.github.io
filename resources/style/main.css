@@ -255,3 +255,7 @@ aside .social-container {}
         animation: bounceleft 2s infinite;
     }
 }
+
+.shutdown {
+    background-color: #fdecb5;
+}
